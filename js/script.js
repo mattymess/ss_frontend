@@ -112,6 +112,8 @@ $(document).ready(function() {
 	Helper function to get photos from 500px API
 	*/
 	function getPhotoCollection(options, func) {
+	
+		$('#collection .inner-wrapper').prepend('<div id="loader"><img src="img/loader.gif" alt="loading photos"/></div>');
 						
 		// set up the defaults;
 	    var settings = {
